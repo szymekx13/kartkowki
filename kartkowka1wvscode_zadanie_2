@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int liczba;
+    int liczbaCyfr = 0;
+    int sumaCyfr = 0;
+
+    cout << "Podaj liczbę całkowitą: ";
+    cin >> liczba;
+
+    if (liczba == 0) {
+        liczbaCyfr = 1;
+        sumaCyfr = 0;
+    } else {
+        int temp = liczba;
+        
+        while (temp != 0) {
+            int cyfra = temp % 10;
+            liczbaCyfr++;
+            sumaCyfr += cyfra;
+            temp /= 10;               
+        }
+    }
+
+
+    cout << "Liczba cyfr: " << liczbaCyfr << endl;
+    cout << "Suma cyfr: " << sumaCyfr << endl;
+
+    return 0;
+}
