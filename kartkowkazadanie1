@@ -1,0 +1,26 @@
+#include <iostream>
+#include <ctime>
+using namespace std;
+
+int main(){
+
+    srand(time(0));
+    int a, proba = 0;
+    int wylosowana_liczba  = rand()%100 + 1;
+    do{
+    cout<<"Podaj liczbę z zakresu od 1 do 100"<<endl;
+    cin>>a;
+    if (a>wylosowana_liczba){
+        cout<<"A jest większe niż wylosowana liczba"<<endl;
+        proba++;
+    }else if(a<wylosowana_liczba){
+        cout<<"a jest mniejsze niż wylosowana liczba"<<endl;
+        proba++;
+    }else if(a=wylosowana_liczba){
+        proba++;
+        cout<<"Udało ci się! odgadłeś liczbę."<<endl;
+        cout<<"Liczba twoich prób wynosiła "<<proba<<endl;
+    }
+    }while(a != wylosowana_liczba);
+    return 0;
+}
