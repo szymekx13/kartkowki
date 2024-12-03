@@ -1,0 +1,71 @@
+//Zadanie 1
+#include <iostream>
+#include <ctime>
+using namespace std;
+
+int main(){
+    srand(time(NULL));
+    const int rozmiar = 100;
+    int tab[rozmiar];
+    cout<<"to są liczby w tablicy: "<<endl;
+    for (int i=0; i<100; i++){
+        tab[i]= rand() % 91 + 10;
+        cout<<tab[i]<<" ";
+    }
+    cout<<endl;
+    cout<<"\nA to są liczby parzyste w przedziale od 35 do 65: "<<endl;
+    for (int i=0; i<100; i++){
+        if (i>=35 && i<=65){
+            if(i % 2 == 0){
+                cout<<i<<" ";
+            }
+        }    
+    }
+    return 0;
+}
+//Zadanie 2
+#include <iostream>
+using namespace std;
+
+int main(){
+    int tab[200];
+    int index;
+    for(int i = 0; i < 200; i++){
+        tab[i] = 2-3i;
+    }
+    cout <<"Wszystkie liczby: "<<endl;
+    for(int i = 0; i < 200; i++){
+        std::cout <<tab[i]<<std::endl;
+    }
+
+    cout <<"Liczby z indexem potęgowanym"<<endl;
+    for(int i = 0; i < 200; i++){
+        index = i;
+        index = indexindex;
+        if(index <= 200){
+            cout <<tab[index]<<endl;
+        }
+    }
+}
+//Zadanie 3
+#include <iostream>
+using namespace std;
+
+int main(){
+    const int rozmiar = 10;
+    int tablica[rozmiar];
+    int najwieksza_liczba, druga_najwieksza;
+    cout<<"Podaj liczbę całkowitą: "<<endl;
+    cin>>tablica[0];
+    najwieksza_liczba = tablica[0];
+    for (int i=1; i<10; i++){
+        cout<<"Podaj liczbę całkowitą: "<<endl;
+        cin>>tablica[i];
+        if (tablica[i]>najwieksza_liczba){
+            najwieksza_liczba=tablica[i];
+        }
+    }
+    druga_najwieksza=najwieksza_liczba-1;
+    cout<<"\nDruga najwieksz liczba to "<<druga_najwieksza;
+    return 0;
+}
