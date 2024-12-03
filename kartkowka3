@@ -31,7 +31,7 @@ int main(){
     int tab[200];
     int index;
     for(int i = 0; i < 200; i++){
-        tab[i] = 2-3i;
+        tab[i] = 2-3*i;
     }
     cout <<"Wszystkie liczby: "<<endl;
     for(int i = 0; i < 200; i++){
@@ -41,7 +41,7 @@ int main(){
     cout <<"Liczby z indexem potęgowanym"<<endl;
     for(int i = 0; i < 200; i++){
         index = i;
-        index = indexindex;
+        index = index*index;
         if(index <= 200){
             cout <<tab[index]<<endl;
         }
